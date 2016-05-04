@@ -1,0 +1,50 @@
+'.source.js.jsx':
+
+  'Import Redux Duck':
+    'prefix': 'duck-ipt'
+    'description': 'Import `createDuck` method from redux-duck'
+    'body': 'import { createDuck } from \'redux-duck\';$1'
+
+  'Create Redux Duck':
+    'prefix': 'duck-crt'
+    'description': 'Create a new duck'
+    'descriptionMoreURL': 'http://sergio.xalambri.com.ar/redux-duck/#create-duck'
+    'body': 'const duck = createDuck(\'$1\', \'$2\');$3'
+
+  'Define Duck Action Type':
+    'prefix': 'duck-tp'
+    'description': 'Define a new constant action type'
+    'descriptionMoreURL': 'http://sergio.xalambri.com.ar/redux-duck/#define-action-types'
+    'body': 'const $1 = duck.defineType(\'$1\');$2'
+
+  'Create Action Creator':
+    'prefix': 'duck-act'
+    'description': 'Generator action creator for the given action type'
+    'descriptionMoreURL': 'http://sergio.xalambri.com.ar/redux-duck/#create-action-creators'
+    'body': """/**
+       * Create $1 action object
+       * @params  {Object} payload Action data
+       * @returns {Object}         Action object
+       */
+      export const $2 = duck.createAction($1);$3"""
+
+  'Create Reducer':
+    'prefix': 'duck-rdc'
+    'description': 'Create and export the duck\'s reducer'
+    'descriptionMoreURL': 'http://sergio.xalambri.com.ar/redux-duck/#create-reducer'
+    'body': """/**
+       * $1
+       * @param  {Object} state  Actual state object
+       * @param  {Object} action Changes to apply
+       * @return {Object}        New state object
+       */
+      export default duck.createReducer({
+        ${3:duck-case}
+      }, $2);"""
+
+  'Create Reducer action case':
+    'prefix': 'duck-case'
+    'description': 'Add reducer action case'
+    'body': """[$1]: (state, { payload = {} }) => {
+      ${2:return state;}
+    },$3"""
