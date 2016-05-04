@@ -1,0 +1,26 @@
+{
+  "name": "atom-redux-duck-snippets",
+  "version": "1.0.0",
+  "description": "Atom Snippets for Redux Duck",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodxa/atom-redux-duck-snippets.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "duck",
+    "snippets",
+    "es6",
+    "babel"
+  ],
+  "engines": {
+    "atom": ">0.174.0"
+  },
+  "author": "Sergio Daniel Xalambrí <sergio@xalambri.com.ar> (http://sergio.xalambri.com.ar/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiodxa/atom-redux-duck-snippets/issues"
+  },
+  "homepage": "https://github.com/sergiodxa/atom-redux-duck-snippets#readme"
+}
