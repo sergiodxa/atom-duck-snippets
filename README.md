@@ -1,4 +1,6 @@
 # Atom Redux Duck Snippets
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 Atom Snippets for [Redux Duck](https://github.com/sergiodxa/redux-duck). This snippets uses Babel(ES2015, ES2016) syntax.
 
 ## Support Language
